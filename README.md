@@ -8,7 +8,7 @@ This challenge required me to build my own code from scratch. I put together a s
 
 ![ryloaf github io_rylee-beginner-portfolio_](https://github.com/ryloaf/rylee-beginner-portfolio/assets/151485696/a1ae97af-40f8-451d-8b18-61f0c7dc3467)
 
-##Link to Application
+## Link to Application
 
 [Rylee's Portfolio Application](https://ryloaf.github.io/rylee-beginner-portfolio/)
 

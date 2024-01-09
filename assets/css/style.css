@@ -1,8 +1,18 @@
+/* I referenced the CSS from the previous challenge in Module 02 to guide me through styling the layout that I wanted to achieve */
 
 :root {
-    --dark: #fefee3;
-    --border-radius: 50px;
-    --light: #d68c45;
+    --light: #fefee3;
+    --orange: #d68c45;
+  }
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
   }
   
   body {
@@ -13,26 +23,33 @@
     justify-content: flex-start;
   }
 
-  
-  h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+  header {
+    padding: 40px;
+    text-align: center;
+    background: var(--light);
+    color: var(--orange);
   }
-
-  .about-me img {
-    padding-top: 45px;
-    max-width: 500px;
-    height: auto;
-    margin: 0 0 0 15px;
-    flex: 1;
-    display: inline-block;
-    position: relative;
-    vertical-align: middle;
+  
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #4c956c;
+    justify-content: center;
+  }
+  
+  nav a {
+    color: #ffc9b9;
+    padding: 14px 80px;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    background-color: var(--orange);
   }
 
   .header nav {
     padding-top: 5px;
-    margin-right: 20px;
+    margin-right: 160px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
@@ -46,26 +63,40 @@
     display: inline-block;
     margin-left: 140px;
 }
-   
-  h2 {
-    font-size: 1rem;
-    margin-bottom: 20px;
-  }
 
-  h3 {
-    font-size: 2rem;
-    text-align: left;
-  }
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
 
-  h4 {
-    font-size: 2rem;
-    text-align: left;
-  }
+h2 {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
 
-  h5 {
-    font-size: 2rem;
-    text-align: left;
-  }
+h3 {
+  font-size: 2rem;
+  text-align: left;
+}
+
+.about-me img {
+  max-width: 500px;
+  height: auto;
+  margin: 0 0 0 15px;
+  margin-top: 60px;
+  flex: 1;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 5px; 
+}
+
+.float-right {
+  float: right;
+  margin-right: 25px;
+}
 
 .about-me {
   margin-bottom: 20px;
@@ -74,7 +105,6 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-color: #2c6e49;
   color: #ffc9b9;
-  border-color: #4c956c;
   flex-wrap:wrap;
 }
 
@@ -83,31 +113,19 @@
     text-align: left;
   }
 
-.certifications {
-  margin-bottom: 20px;
-  padding: 40px;
-  height: 200px;
-  width: 562px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: #2c6e49;
-  color: #ffc9b9;
-  float: left;
-}
-
-  .certifications p {
-    font-size: 1rem;
+  h4 {
+    font-size: 2rem;
     text-align: left;
   }
-  
+
   .my-projects {
     margin-bottom: 20px;
     padding: 40px;
     height: 200px;
-    width: 562px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2c6e49;
     color: #ffc9b9;
-    float: right;
+    flex-wrap:wrap;
 }
 
   .my-projects  {
@@ -115,67 +133,24 @@
     text-align: left;
   }
 
-  header {
-    padding: 40px;
-    text-align: center;
-    background: var(--dark);
-    color: var(--light);
+  .my-projects ul {
+    font-size: 1.2rem;
+    text-align: left;
   }
-  
-  nav {
-    display: flex;
-    background-color: #4c956c;
-  }
-  
-  nav a {
-    color: #ffc9b9;
-    padding: 14px 20px;
-    text-decoration: none;
-    text-align: center;
-  }
-  
-  nav a:hover {
-    background-color: var(--light);
-  }
-  
-  main {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-  }
-  
   
   footer {
     width: 100%;
     bottom: 0;
     padding: 20px;
     text-align: center;
-    background: var(--dark);
-    color: var(--light);
+    background: var(--light);
+    color: var(--orange);
     margin-top: auto;
   }
   
   footer ul {
   list-style-type: none;
 }
-
-  .float-right {
-    float: right;
-    margin-right: 25px;
-}
-
-  .products {
-    flex: 1;
-    background-color: var(--light);
-    padding: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
 
   @media screen and (max-width: 768px) {
     main,
